@@ -1,0 +1,9 @@
+<odoo>
+  <data>
+
+
+    <menuitem name="school_management" id="school_management.menu_root"/>
+    <menuitem name="Menu 1" id="school_management.menu_1" parent="school_management.menu_root" action="school_management_window"/>
+    <menuitem name="Menu 2" id="school_management.menu_2" parent="school_management.menu_1" action="school_management_window"/>
+  </data>
+</odoo>

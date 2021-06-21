@@ -1,0 +1,28 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="test_module_list">
+      <field name="name">School Management List</field>
+      <field name="model">school.management.student</field>
+      <field name="arch" type="xml">
+             <tree>
+
+                 <field name="name"/>
+                 <field name="age"/>
+                 <field name="gender"/>
+                 <field name="guardian"/>
+
+             </tree>
+      </field>
+    </record>
+
+
+    <record model="ir.actions.act_window" id="school_management_window">
+      <field name="name">school_management window</field>
+      <field name="res_model">school.management.student</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+  </data>
+</odoo>
